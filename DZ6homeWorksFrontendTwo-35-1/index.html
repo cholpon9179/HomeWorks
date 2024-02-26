@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ6</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <h1>Просто блог</h1>
+    </div>
+
+    <main id="blog-posts">
+
+    </main>
+
+    <form id="blog-form">
+        <h2> Добавить статью</h2>
+        <label for="title">Заголовок:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="content">Содержание:</label>
+        <textarea name="content" id="content"  rows="4" required></textarea>
+
+        <button onclick="addBlogPost()">Опубликовать</button>
+    </form>
+
+
+    <!-- Модальное окно для удаления -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Подтвердите удаление</p>
+            <button id="confirmDelete">Ok</button>
+            <button id="cancelDelete">Отмена</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно для редактирования -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <label for="editedTitle">Заголовок:</label>
+            <input type="text" id="editedTitle" name="editedTitle" required>
+            <label for="editedContent">Содержание:</label>
+            <textarea name="editedContent" id="editedContent"  rows="4" required></textarea>
+            <button id="confirmEdit">Ok</button>
+            <button id="cancelEdit">Отмена</button>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
