@@ -1,41 +1,33 @@
-// const riddles = document.querySelectorAll('.riddle')
-//
-// riddles.forEach(riddle => {
-//     const answerBtn = riddle.querySelector('.answer-btn')
-//     const answer = riddle.querySelector('.answer')
-//
-//     answerBtn.addEventListener('click', function() {
-//         answer.classList.toggle('show')
-//         if (answer.classList.contains('show')) {
-//             answerBtn.innerHTML = "Скрыть ответ"
-//         } else {
-//             answerBtn.innerHTML = "Показать ответ"
-//         }
-//     })
-// })
+      const movies = [
+    { title: "Человек-паук", year:2002, rating: 7.4, director: "Сэм Рейми" },
+    { title: "Вонка", year: 2023, rating: 7.1, director: "Поул Кинг" },
+    { title: "Оппенгеймер", year: 2023, rating: 8.4, director: "Кристофер Нолан" }
+    ]
 
-//вариант с this, drap, drop
-const riddles = document.querySelectorAll('.riddle')
+    function renderTable() {
+    const tableBody = document.querySelector("#moviesTable tbody")
+    tableBody.innerHTML = ''
 
-riddles.forEach(riddle => {
-    const answerBtn = riddle.querySelector('.answer-btn')
-    const answer = riddle.querySelector('.answer')
-
-    answerBtn.addEventListener('click', function() {
-        this.classList.toggle('active') // Добавляем класс при клике на кнопку
-        answer.classList.toggle('show')
-        if (answer.classList.contains('show')) {
-            this.innerHTML = "Скрыть ответ"
-        } else {
-            this.innerHTML = "Показать ответ"
-        }
-    })
-
-    answerBtn.addEventListener('dragstart', function(event) {
-        // Логика, выполняемая при начале перетаскивания кнопки
-    })
-
-    answerBtn.addEventListener('drop', function(event) {
-        // Логика, выполняемая при отпускании кнопки в зоне перетаскивания
-    })
+    movies.forEach(movie => {
+    const row = document.createElement("tr")
+    row.innerHTML = `
+        <td>${movie.title}</td>
+        <td>${movie.year}</td>
+        <td>${movie.rating}</td>
+        <td>${movie.director}</td>
+        <td>
+          <button onclick="buyTicket(this)">Купить</button>
+        </td>
+      `
+    tableBody.appendChild(row)
 })
+}
+    function buyTicket(button) {
+    const row = button.parentNode.parentNode
+    row.classList.add("bought")
+    button.remove()
+    alert("Подтверждение")
+}
+
+  
+    renderTable()
