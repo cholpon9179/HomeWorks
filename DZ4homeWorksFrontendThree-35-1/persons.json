@@ -1,0 +1,29 @@
+
+[
+    {
+      "name": "Leonardo DiCaprio",
+      "age": 23,
+      "person_photo": "https://media.vogue.fr/photos/5c2f607ef73dacd6ece1793f/1:1/w_1865,h_1865,c_limit/gettyimages_97205874_jpg_3153.jpg",
+      "avatar": "https://media.vogue.fr/photos/5c2f607ef73dacd6ece1793f/1:1/w_1865,h_1865,c_limit/gettyimages_97205874_jpg_3153.jpg"
+    },
+    {
+      "name": "Johny Depp",
+      "age": 28,
+      "person_photo": "https://i.pinimg.com/564x/05/13/64/051364959f28400a106c55481005854d.jpg",
+      "avatar": "https://i.pinimg.com/564x/05/13/64/051364959f28400a106c55481005854d.jpg "
+    },
+    {
+      "name": "Brad Pitt",
+      "age": 34,
+      "person_photo": "https://i.ebayimg.com/images/g/ykcAAOSwNs5iU9mZ/s-l1200.jpg",
+      "avatar": "https://i.ebayimg.com/images/g/ykcAAOSwNs5iU9mZ/s-l1200.jpg"
+    },
+    {
+      "name": "Jackie Chan",
+      "age": 27,
+      "person_photo": "https://i.pinimg.com/736x/80/79/af/8079af2439c206983a835b6c0a11c22d.jpg",
+      "avatar": "https://i.pinimg.com/736x/80/79/af/8079af2439c206983a835b6c0a11c22d.jpg"
+    }
+  
+  ]
+  
