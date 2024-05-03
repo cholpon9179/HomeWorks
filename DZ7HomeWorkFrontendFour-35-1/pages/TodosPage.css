@@ -1,0 +1,106 @@
+/* TodosPage.css */
+
+.todos-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.todos-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.todo-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.todo-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.todo-content {
+    display: flex;
+    align-items: center;
+}
+
+.todo-text {
+    flex: 1;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.todo-text.completed {
+    text-decoration: line-through;
+}
+
+.edit-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.edit-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.save-button,
+.delete-button,
+.update-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #008cba;
+    color: #ffffff;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.update-button {
+    background-color: #008cba;
+    color: #ffffff;
+    margin-left: 10px;
+}
